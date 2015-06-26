@@ -1,0 +1,39 @@
+{
+  "name": "dsweeper",
+  "version": "0.0.1",
+  "description": "Don't let AppleDouble `._whatever` files into Dropbox folder.",
+  "main": "lib/index.js",
+  "bin": {
+    "dsweeper": "./bin/dsweeper"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simsalabim/dsweeper.git"
+  },
+  "keywords": [
+    "dropbox",
+    "appledouble",
+    "external",
+    "usb",
+    "hdd"
+  ],
+  "dependencies": {
+    "commander": ">= 2.0.0",
+    "daemon": ">=1.1.0"
+  },
+  "devDependencies": {
+    "chai": ">=3.0.0"
+  },
+  "author": "Alexander Kaupanin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simsalabim/dsweeper/issues"
+  },
+  "homepage": "https://github.com/simsalabim/dsweeper#readme"
+}
