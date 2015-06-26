@@ -1,6 +1,6 @@
 {
   "name": "dsweeper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Don't let AppleDouble `._whatever` files into Dropbox folder.",
   "main": "lib/index.js",
   "bin": {
@@ -10,7 +10,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "jslint lib/**/*.js --config=jslint.config --stupid && mocha"
   },
   "repository": {
     "type": "git",
@@ -24,9 +24,11 @@
     "hdd"
   ],
   "dependencies": {
-    "commander": ">= 2.0.0",
-    "daemon": ">=1.1.0"
+    "commander": ">= 2.0.0"
   },
+  "bundledDependencies": [
+    "daemon"
+  ],
   "devDependencies": {
     "chai": ">=3.0.0"
   },

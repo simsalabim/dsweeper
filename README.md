@@ -8,7 +8,7 @@ people [ran](https://www.dropboxforum.com/hc/communities/public/questions/202940
 
 ## Installation
 
-If you don't have nodejs installed, the fastest way would be to use [nvm](https://github.com/creationix/nvm)
+If you don't have nodejs installed, the fastest way would be to use [nvm](https://github.com/creationix/nvm)<br>
 `wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash`
 and then
 `nvm install stable`
@@ -24,7 +24,7 @@ Configuration options available:
 ```
 -h, --help         output usage information
 -d, --daemonize    Daemonize
--p, --path [path]  Path to directory to monitor; default to Dropbox folder
+-p, --path [path]  Path to directory to monitor; defaults to Dropbox folder
 ```
 
 ## TODO

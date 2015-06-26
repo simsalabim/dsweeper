@@ -6,12 +6,18 @@ var fs = require("fs");
 var program = require("commander");
 var dsweeper = require("../lib/index.js");
 
-var db_settings = fs.readFileSync(process.env["HOME"] + "/.dropbox/info.json");
-db_settings = JSON.parse(db_settings.toString());
+var dbFile = process.env["HOME"] + "/.dropbox/info.json";
+if (fs.existsSync(dbFile)) {
+  var db_settings = fs.readFileSync(dbFile);
+  db_settings = JSON.parse(db_settings.toString());
+  var path = db_settings.personal.path;
+} else {
+  var path = "";
+}
 
 program
   .option("-d, --daemonize", "Daemonize")
-  .option("-p, --path [path]", "Path to directory to monitor; defaults to Dropbox folder", db_settings.personal.path)
+  .option("-p, --path [path]", "Path to directory to monitor; defaults to Dropbox folder", path)
   .parse(process.argv);
 
 dsweeper(program.path);
