@@ -1,6 +1,6 @@
 {
   "name": "dsweeper",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Don't let AppleDouble `._whatever` files into Dropbox folder.",
   "main": "lib/index.js",
   "bin": {
@@ -10,7 +10,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jslint lib/**/*.js --config=jslint.config --stupid && mocha"
+    "test": "jslint lib/**/*.js --config=jslint.config --stupid && jshint lib/**/*.js && mocha"
   },
   "repository": {
     "type": "git",
@@ -30,7 +30,9 @@
     "daemon": ">=1.0.0"
   },
   "devDependencies": {
-    "chai": ">=3.0.0"
+    "chai": ">=3.0.0",
+    "jshint": "^2.8.0",
+    "jslint": ">=0.9.1"
   },
   "author": "Alexander Kaupanin",
   "license": "MIT",
