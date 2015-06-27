@@ -9,4 +9,4 @@ before_install:
   - "npm install commander"
   - "npm install mocha -g"
   - "npm install jslint -g"
-  - "bin/dsweeper -p `pwd`/test/fixtures/sweep_me -d"
+  - "bin/dsweeper -p `pwd`/test/fixtures/sweep_me -d -t test-dsweeper"

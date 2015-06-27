@@ -9,10 +9,11 @@ var filter = require("../lib/filter.js");
 var findFiles = require("../lib/file_finder.js");
 
 var path = __dirname + "/fixtures/sweep_me";
+var processTitle = "test-dsweeper";
 
 describe("Dsweeper", function() {
   before(function(done) {
-    exec("bin/dsweeper -d -p " + path, function(error, stdout, stderr) {});
+    exec("bin/dsweeper -d -p " + path + " -t " + processTitle, function(error, stdout, stderr) {});
 
     touch(path + "/._one");
     touch(path + "/t._wo");
@@ -26,7 +27,7 @@ describe("Dsweeper", function() {
   });
 
   after(function(done) {
-    exec("kill `pgrep -f dsweeper`", function(err, stdout, stderr){});
+    exec("kill `pgrep -f " + processTitle + "`", function(err, stdout, stderr){});
     rmdir(path + "/second");
     done();
   });

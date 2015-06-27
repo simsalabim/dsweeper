@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-process.title = "dsweeper";
-
 var fs = require("fs");
 var program = require("commander");
 var dsweeper = require("../lib/index.js");
@@ -18,8 +16,10 @@ if (fs.existsSync(dbFile)) {
 program
   .option("-d, --daemonize", "Daemonize")
   .option("-p, --path [path]", "Path to directory to monitor; defaults to Dropbox folder", path)
+  .option("-t, --title [title]", "Process title - useful for running tests and not killing working process", "dsweeper")
   .parse(process.argv);
 
+process.title = program.title;
 dsweeper(program.path);
 
 console.log("Dropbox AppleDouble sweeper is running.");
