@@ -1,1 +1,12 @@
+# system files
+.DS_Store
+Thumbs.db
+
+# editors files
+.idea
+*.iml
+*.swp
+
+# npm files
 node_modules/
+npm-debug.log
