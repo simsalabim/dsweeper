@@ -1,6 +1,6 @@
 # AppleDouble files sweeper
 
-[![npm](https://img.shields.io/npm/v/dsweeper.svg)](https://www.npmjs.com/package/dsweeper) [![Build Status](https://api.travis-ci.org/simsalabim/dsweeper.svg?branch=master "Build Status")](https://travis-ci.org/simsalabim/dsweeper) [![Dependency Status](https://david-dm.org/simsalabim/dsweeper.svg)](https://david-dm.org/simsalabim/dsweeper) [![devDependency Status](https://david-dm.org/simsalabim/dsweeper/dev-status.svg)](https://david-dm.org/simsalabim/dsweeper#info=devDependencies)
+[![npm](https://img.shields.io/npm/v/dsweeper.svg)](https://www.npmjs.com/package/dsweeper) [![Build Status](https://api.travis-ci.org/simsalabim/dsweeper.svg?branch=master "Build Status")](https://travis-ci.org/simsalabim/dsweeper) [![Coverage Status](https://coveralls.io/repos/simsalabim/dsweeper/badge.svg)](https://coveralls.io/r/simsalabim/dsweeper) [![Dependency Status](https://david-dm.org/simsalabim/dsweeper.svg)](https://david-dm.org/simsalabim/dsweeper) [![devDependency Status](https://david-dm.org/simsalabim/dsweeper/dev-status.svg)](https://david-dm.org/simsalabim/dsweeper#info=devDependencies)
 
 A tool that doesn't let AppleDouble `._whatever` files into folder that is kept on external HDD.
 Helps keeping Dropbox clean.
