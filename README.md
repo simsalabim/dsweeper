@@ -11,7 +11,9 @@ This tool helps fixing the problem.
 
 ## Installation
 
-If you don't have Node.js installed, the fastest way would be to use [nvm](https://github.com/creationix/nvm)<br>
+If you don't have Node.js installed, the fastest way would be to use [nvm](https://github.com/creationix/nvm) usgin cURL<br/>
+`curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash`
+or Wget <br/>
 `wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash`
 and then `nvm install stable`
 
