@@ -15,7 +15,7 @@ If you don't have Node.js installed, the fastest way would be to use [nvm](https
 `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash`
 or Wget <br/>
 `wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash`
-and then `nvm install stable`
+and then `nvm install 6` (the tool supports node versions from 4 to 8).
 
 When you have nodejs installed, run `npm install dsweeper -g`
 
