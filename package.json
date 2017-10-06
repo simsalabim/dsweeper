@@ -1,6 +1,6 @@
 {
   "name": "dsweeper",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Don't let AppleDouble `._whatever` files into Dropbox folder.",
   "main": "lib/index.js",
   "bin": {
@@ -26,9 +26,9 @@
     "hdd"
   ],
   "dependencies": {
+    "chokidar": ">=1.0.3",
     "commander": ">= 2.0.0",
-    "daemon": ">=1.0.0",
-    "chokidar": ">=1.0.3"
+    "daemon": "github:zipang/daemon.node#48d0977c26fb3a6a44ae99aae3471b9d5a761085"
   },
   "devDependencies": {
     "chai": ">=3.0.0",
